@@ -125,6 +125,14 @@ input[type="number"] {
     display: block;
 }
 
+.banner-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto; /* Or remove fixed height */
+    overflow: hidden;
+}
+
 /*** Button ***/
 .btn {
     font-weight: 500;
