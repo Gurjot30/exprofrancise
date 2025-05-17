@@ -118,10 +118,11 @@ input[type="number"]::-webkit-outer-spin-button {
 input[type="number"] {
     -moz-appearance: textfield;
 }
-.fixhw{
+.fixhw {
     width: 100%;
-    height: 85vh;
-    border-radius: 10px;
+    height: auto; /* Important: Keeps aspect ratio */
+    object-fit: contain; /* or 'cover' depending on your visual preference */
+    display: block;
 }
 
 /*** Button ***/
