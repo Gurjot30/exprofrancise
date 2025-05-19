@@ -805,3 +805,70 @@ p {
       height: 40px !important;
     }
   }
+
+  .servicecard {
+    background-color: #ffffff;
+    border: 1px solid #17469e;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    width: auto; /* Reduced width */
+    padding: 30px 20px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 20px;
+    height: 105px; /* Fixed card height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .servicecard:hover {
+    background-color: #17469e;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  .servicecard:hover i,
+  .servicecard:hover svg,
+  .servicecard:hover h6 {
+    color: #ffffff;
+  }
+  
+  .servicecard i,
+  .servicecard svg {
+    color: #17469e;
+    font-size: 35px;
+    margin-bottom: 12px;
+    display: block;
+  }
+  
+  .servicecard h6 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #17469e;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Ensure SVGs don't exceed their bounds */
+  .servicecard svg {
+    width: 45px;
+    height: 45px;
+  }
+  
+  /* Optional: Responsive handling */
+  @media (max-width: 768px) {
+    .servicecard {
+      height: auto;
+      padding: 25px 15px;
+    }
+  
+    .servicecard i,
+    .servicecard svg {
+      font-size: 36px;
+    }
+  
+    .servicecard h6 {
+      font-size: 16px;
+    }
+  }
+  
