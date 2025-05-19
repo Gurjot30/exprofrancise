@@ -815,7 +815,7 @@ p {
     text-align: center;
     transition: all 0.3s ease-in-out;
     margin-bottom: 20px;
-    height: 105px; /* Fixed card height */
+    height: 99px; /* Fixed card height */
     display: flex;
     flex-direction: column;
     align-items: center;
