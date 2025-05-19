@@ -806,69 +806,58 @@ p {
     }
   }
 
-  .servicecard {
-    background-color: #ffffff;
-    border: 1px solid #17469e;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-    width: auto; /* Reduced width */
-    padding: 30px 20px;
-    text-align: center;
-    transition: all 0.3s ease-in-out;
-    margin-bottom: 20px;
-    height: 99px; /* Fixed card height */
-    display: flex;
-    flex-direction: column;
+  .serviceslider {
+    background-size: cover;
+    background-image: url(../css/diamond-pattern-small-grey.png);
+    background-size: 90px;
+    image-rendering: -webkit-optimize-contrast;
+}
+
+.v-center {
     align-items: center;
-    justify-content: center;
-  }
-  
-  .servicecard:hover {
-    background-color: #17469e;
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
-  }
-  
-  .servicecard:hover i,
-  .servicecard:hover svg,
-  .servicecard:hover h6 {
-    color: #ffffff;
-  }
-  
-  .servicecard i,
-  .servicecard svg {
-    color: #17469e;
-    font-size: 35px;
-    margin-bottom: 12px;
-    display: block;
-  }
-  
-  .servicecard h6 {
-    font-size: 16px;
-    font-weight: 500;
-    color: #17469e;
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-  }
-  
-  /* Ensure SVGs don't exceed their bounds */
-  .servicecard svg {
-    width: 45px;
-    height: 45px;
-  }
-  
-  /* Optional: Responsive handling */
-  @media (max-width: 768px) {
-    .servicecard {
-      height: auto;
-      padding: 25px 15px;
-    }
-  
-    .servicecard i,
-    .servicecard svg {
-      font-size: 36px;
-    }
-  
-    .servicecard h6 {
-      font-size: 16px;
-    }
-  }
-  
+    align-self: center;
+}
+
+.icon-bx-wraper {
+    margin: 20px 0px;
+    transition: .3s ease;
+    padding: 15px;
+    height: calc(100% - 30px);
+    border: 2px dashed #214b92;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.grey-bg {
+    background-color: #F8F8F8;
+}
+
+.icon-cell img {
+    padding: 8px;
+    background: #214b92;
+    color: #fff;
+    margin-bottom: 15px;
+    transition: .3s ease;
+}
+
+.borderred {
+    border-left: 2px solid #214b92;
+    height: calc(100% - 30px);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.visoncard {
+    padding: 15px;
+    border: 1px solid #214b92;
+    margin-bottom: 10px;
+    height: calc(100% - 30px);
+    color: #fff !important;
+    text-align: justify !important;
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.missionvision {
+    background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url(../img/vision_mission.png) center top no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
